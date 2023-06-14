@@ -1,21 +1,18 @@
-import React, { Component } from "react";
+import React from "react";
 import { Card, CardTitle, CardImg, CardImgOverlay, CardBody } from "reactstrap";
 
 function RenderDish({dish}) {
         if (dish != null)
             return (
                 
-                <div class="col-12 col-md-3 mt-3 ">
-                    
+                <div class="col-12 col-md-4 mt-3 ">
                     <Card>
                         <CardImg width="100%" src={dish.image} alt={dish.name} />
-                    </Card>
-                    <Card>
                     <CardImgOverlay >
                             <CardTitle >{dish.name}</CardTitle>
                             <CardBody>{dish.description}</CardBody>
                         </CardImgOverlay>
-                    </Card>
+                        </Card>
                     </div>
             )
         else {
